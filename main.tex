@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{tikz} 
+\usepackage{hyperref}
+\RequirePackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-1pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Tinu Joseph} \\ \vspace{1pt}
+    \small 437-254-0259 $|$ \href{mailto:x@x.com}{\underline{tinu.netlify.app}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/tinu-joseph}} $|$
+    \href{https://github.com/...}{\underline{github.com/Tinu005}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mcmaster University}{Hamilton, ON}
+      {Bachelor of Arts in Computer Science, Minor in French}{Sept. 2021 -- May 2025}
+    \resumeSubheading
+      {St. Michael's Choir School}{Toronto, ON}
+      {Secondary Diploma, French Certification}{Sept. 2017 -- June 2021}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Tinu005/Weatherman_Discordbot}{\textbf{Weatherman - Discord Bot \faExternalLink}} $|$ \emph{Python, Discord.py, Weather API}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Learning how to implement a discord bot to be used in public servers to display weather data, given a city name}
+            \resumeItem{Pull and display weather icons from a weather API}
+            \resumeItem{Display Temperature, precipitation, feels like and wind speed}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\href{https://github.com/Tinu005/my_portfolio}{\textbf{Personal Portfolio \faExternalLink}} $|$ \emph{Javascript, Tailwind CSS, Reactjs, HTML, Vite, Typescript, Figma, Netlify}}{November 2022}
+          \resumeItemListStart
+            \resumeItem{Designed a prototype website on Figma for a modern UI/UX to organize and envision the final site}
+            \resumeItem{Used Vite to develop the website with some boilerplate code}
+            \resumeItem{Used Tailwind to simplify and speed up the development process}
+            \resumeItem{Made the website using responsive web design for scalability and mobile support}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------Hackathon Projects-----------
+\section{Hackathon Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.youtube.com/watch?v=_O0dha-w2K8}{Stockpile - Stock Market Simulator} \faExternalLink}{January 2022}
+      {React, Javascript, Figma, Google Clouds}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{ Winner of MLH Best Use of Google Cloud Award.}
+        \resumeItem{A full stack mobile PWA prototype with high scalability using Google’s Cloud Services}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.youtube.com/watch?v=7eW4TlOKxHo}{Convokids - Speech Enhancement and Learning Tool} \faExternalLink}{February 2022}
+      {Figma, React, Python, CSS, Javascript}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Utilizing I/O devices to analyse human emotional patterns}
+        \resumeItem{Utilize database of extensive reserched opinions to suggest correct emotional and verbal responses to situations}
+        \resumeItem{Teach children who remain at home in isolation to properly communicate with others when they leave isolation}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, SQL, Haskell, JavaScript, HTML/CSS, Typescript} \\
+     \textbf{Frameworks}{: React, Vite, Tailwind} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Jdoodle, SSH} \\
+     \textbf{Libraries}{: Discord.py, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+ %-----------AWARDS AND DISTINCTIONS-----------
+\section{Awards and Distinctions}
+%\textbf{}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {{\textbf{Dean's Honour List}} $|$ McMaster University}{Apr 2022 -- Present}
+        \resumeItemListStart
+          \resumeItem{Awarded to students who achieve a GPA of 3.5 or above.}
+          \resumeItem{Finished first year with a Major GPA of 4 and Cumalative GPA of 3.89}
+        \resumeItemListEnd
+    \resumeProjectHeading
+    {{\textbf{McMaster University Award of Excellence}} $|$ McMaster University}{Sept 2021 -- Apr 2022}
+    \resumeItemListStart
+      \resumeItem{Entrance scholarship of \$3000 awarded to students with an admission average in the top 10\% of the faculty.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
